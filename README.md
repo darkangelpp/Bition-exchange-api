@@ -117,7 +117,7 @@ https://openapi.bition.pro/exchange-open-api
             "tradeList":[
                 {
                     "volume":"1.000",
-                    "feeCoin":"YLB",
+                    "feeCoin":"BTB",
                     "price":"0.10000000",
                     "fee":"0.16431104",
                     "ctime":1510996571195,
@@ -148,7 +148,7 @@ https://openapi.bition.pro/exchange-open-api
             "tradeList":[
                 {
                     "volume":"1.000",
-                    "feeCoin":"YLB",
+                    "feeCoin":"BTB",
                     "price":"0.10000000",
                     "fee":"0.16597075",
                     "ctime":1510993723973,
@@ -186,7 +186,7 @@ https://openapi.bition.pro/exchange-open-api
             {
                     "volume":"1.000",
                     "side":"BUY",
-                    "feeCoin":"YLB",
+                    "feeCoin":"BTB",
                     "price":"0.10000000",
                     "fee":"0.16431104",
                     "ctime":1510996571195,
@@ -197,7 +197,7 @@ https://openapi.bition.pro/exchange-open-api
             {
                 "volume":"0.850",
                 "side":"BUY",
-                "feeCoin":"YLB",
+                "feeCoin":"BTB",
                 "price":"0.10000000",
                 "fee":"0.13966438",
                 "ctime":1510996571190,
@@ -208,7 +208,7 @@ https://openapi.bition.pro/exchange-open-api
             {
                 "volume":"0.010",
                 "side":"BUY",
-                "feeCoin":"YLB",
+                "feeCoin":"BTB",
                 "price":"0.10000000",
                 "fee":"0.00164311",
                 "ctime":1510995560344,
@@ -219,7 +219,7 @@ https://openapi.bition.pro/exchange-open-api
             {
                 "volume":"0.010",
                 "side":"BUY",
-                "feeCoin":"YLB",
+                "feeCoin":"BTB",
                 "price":"0.10000000",
                 "fee":"0.00164311",
                 "ctime":1510995560338,
@@ -230,7 +230,7 @@ https://openapi.bition.pro/exchange-open-api
             {
                 "volume":"0.010",
                 "side":"BUY",
-                "feeCoin":"YLB",
+                "feeCoin":"BTB",
                 "price":"0.10000000",
                 "fee":"0.00164311",
                 "ctime":1510995560331,
@@ -241,58 +241,15 @@ https://openapi.bition.pro/exchange-open-api
             {
                 "volume":"0.010",
                 "side":"BUY",
-                "feeCoin":"YLB",
+                "feeCoin":"BTB",
                 "price":"0.10000000",
                 "fee":"0.00164311",
                 "ctime":1510995555323,
                 "deal_price":"0.00100000",
                 "id":288,
                 "type":"买入"
-            },
-            {
-                "volume":"0.010",
-                "side":"BUY",
-                "feeCoin":"YLB",
-                "price":"0.10000000",
-                "fee":"0.00164311",
-                "ctime":1510995555317,
-                "deal_price":"0.00100000",
-                "id":287,
-                "type":"买入"
-            },
-            {
-                "volume":"0.010",
-                "side":"BUY",
-                "feeCoin":"YLB",
-                "price":"0.10000000",
-                "fee":"0.00164311",
-                "ctime":1510995550309,
-                "deal_price":"0.00100000",
-                "id":286,
-                "type":"买入"
-            },
-            {
-                "volume":"0.010",
-                "side":"BUY",
-                "feeCoin":"YLB",
-                "price":"0.10000000",
-                "fee":"0.00164311",
-                "ctime":1510995550303,
-                "deal_price":"0.00100000",
-                "id":285,
-                "type":"买入"
-            },
-            {
-                "volume":"0.010",
-                "side":"BUY",
-                "feeCoin":"YLB",
-                "price":"0.10000000",
-                "fee":"0.00164311",
-                "ctime":1510995545295,
-                "deal_price":"0.00100000",
-                "id":284,
-                "type":"买入"
             }
+	    ...
         ]
 }
 ```
@@ -327,52 +284,45 @@ https://openapi.bition.pro/exchange-open-api
 |data|如下||
 ```
 {
-    "code": "0",
-    "msg": "suc",
-    "data": [
-        {
-            "symbol": "ethbtc",//交易对
-            "count_coin": "btc",//计价货币
-            "amount_precision": 3,//数量精度位数（0为个位）
-            "base_coin": "eth",//基础币种
-            "price_precision": 8 //价格精度位数（0为个位）
-        },
-        {
-            "symbol": "ltcbtc",
-            "count_coin": "btc",
-            "amount_precision": 2,
-            "base_coin": "ltc",
-            "price_precision": 8
-        },
-        {
-            "symbol": "bchbtc",
-            "count_coin": "btc",
-            "amount_precision": 3,
-            "base_coin": "bch",
-            "price_precision": 8
-        },
-        {
-            "symbol": "etcbtc",
-            "count_coin": "btc",
-            "amount_precision": 2,
-            "base_coin": "etc",
-            "price_precision": 8
-        },
-        {
-            "symbol": "ltceth",
-            "count_coin": "eth",
-            "amount_precision": 2,
-            "base_coin": "ltc",
-            "price_precision": 8
-        },
-        {
-            "symbol": "etceth",
-            "count_coin": "eth",
-            "amount_precision": 2,
-            "base_coin": "etc",
-            "price_precision": 8
-        }
-    ]
+	"code": "0",
+	"msg": "suc",
+	"data": [{
+		"symbol": "ethbtc",
+		"count_coin": "BTC",
+		"amount_precision": 3,
+		"base_coin": "ETH",
+		"price_precision": 6
+	}, {
+		"symbol": "btcusdt",
+		"count_coin": "USDT",
+		"amount_precision": 4,
+		"base_coin": "BTC",
+		"price_precision": 2
+	}, {
+		"symbol": "ethusdt",
+		"count_coin": "USDT",
+		"amount_precision": 4,
+		"base_coin": "ETH",
+		"price_precision": 2
+	}, {
+		"symbol": "mvpusdt",
+		"count_coin": "USDT",
+		"amount_precision": 3,
+		"base_coin": "MVP",
+		"price_precision": 6
+	}, {
+		"symbol": "mvpeth",
+		"count_coin": "ETH",
+		"amount_precision": 3,
+		"base_coin": "MVP",
+		"price_precision": 8
+	}, {
+		"symbol": "wicceth",
+		"count_coin": "ETH",
+		"amount_precision": 2,
+		"base_coin": "WICC",
+		"price_precision": 8
+	}]
 }
 ```
 ### 5) /open/api/create_order 创建订单(post)
@@ -411,38 +361,28 @@ https://openapi.bition.pro/exchange-open-api
 |data|如下|
 
 ```
-[
-    [
-        1514445780, //时间戳
-        1.12, //开盘价
-        1.12, //最高
-        1.12, //最低
-        1.12, //收盘价
-        0 //成交量
-    ],
-    [
-        1514445840,
-        1.12,
-        1.12,
-        1.12,
-        1.12,
-        0
-    ],
-    [
-        1514445900,
-        1.12,
-        1.12,
-        1.12,
-        1.12,
-        0
-    ]
-]
+{
+	"code": "0",
+	"msg": "suc",
+	"data": [
+		[1536293520, 6482.23000000, 6485.29000000, 6482.23000000, 6485.29000000, 0.00060000],
+		//时间戳,开盘价，最高价，最低价，收盘价，成交量
+		[1536293580, 6485.73000000, 6486.90000000, 6485.73000000, 6486.90000000, 0.00070000],
+		[1536293640, 6483.64000000, 6485.13000000, 6483.64000000, 6485.13000000, 0.00080000],
+		[1536293700, 6485.51000000, 6488.20000000, 6485.51000000, 6488.20000000, 0.00110000],
+		[1536293760, 6488.52000000, 6488.66000000, 6488.52000000, 6488.66000000, 0.00070000],
+		...
+		[1536308820, 6442.16000000, 6446.02000000, 6442.16000000, 6443.29000000, 0.00090000],
+		[1536308880, 6444.56000000, 6444.56000000, 6443.78000000, 6443.78000000, 0.00050000],
+		[1536308940, 6443.36000000, 6443.54000000, 6443.36000000, 6443.54000000, 0.00050000],
+		[1536309000, 6446.42000000, 6451.19000000, 6446.42000000, 6450.56000000, 0.00040000],
+	]
+}
 ```
 ### 7) /open/api/get_ticker 获取当前行情(get)
 |参数|填写类型|说明|
 |:---|:---|:---|
 |symbol|必填|市场标记，例如：ethbtc。见文档最后表一|
-
 
 返回
 
@@ -468,7 +408,6 @@ https://openapi.bition.pro/exchange-open-api
 |:---|:---|:---|
 |symbol|必填|市场标记，例如：ethbtc。见文档最后表一|
 
-
 返回
 
 |字段|实例|说明|
@@ -488,12 +427,6 @@ https://openapi.bition.pro/exchange-open-api
         "amount": 16.45,
         "price": 0.18335468,
         "id": 447120,
-        "type": "buy"
-    },
-    {
-        "amount": 2,
-        "price": 0.18335468,
-        "id": 447119,
         "type": "buy"
     },
     {
@@ -611,7 +544,7 @@ https://openapi.bition.pro/exchange-open-api
             "tradeList": [
                 {
                     "volume": "1.000",
-                    "feeCoin": "YLB",
+                    "feeCoin": "BTB",
                     "price": "0.10000000",
                     "fee": "0.16431104",
                     "ctime": 1510996571195,
@@ -642,7 +575,7 @@ https://openapi.bition.pro/exchange-open-api
             "tradeList": [
                 {
                     "volume": "1.000",
-                    "feeCoin": "YLB",
+                    "feeCoin": "BTB",
                     "price": "0.10000000",
                     "fee": "0.16597075",
                     "ctime": 1510993723973,
