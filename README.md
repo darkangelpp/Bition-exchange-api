@@ -472,11 +472,6 @@ https://openapi.bition.pro/exchange-open-api
 ```
 
 ### 10) /open/api/market 获取各个币对的最新成交价(get)
-|参数|填写类型|说明|
-|:---|:---|:---|
-|api_key|必填|api_key|
-|time|必填|时间戳|
-|sign|必填|签名|
 
 返回
 
