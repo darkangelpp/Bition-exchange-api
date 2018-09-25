@@ -25,7 +25,11 @@
 * /open/api/order_info —— 获取订单详情
 
 * /open/api/user/account —— 资产余额
-## 2.通用规则
+
+## 2.地址
+```https://openapi.bition.pro/exchange-open-api```
+
+## 3.通用规则
 签名：
 
 请求参数按照字典排序，然后以keyvalue的形式拼接成字符串string，最后sign=MD5(string+secretKey)。注意：如果请求参数中value为NULL的情况，则在拼接字符串时不计入签名字符串。
@@ -46,12 +50,12 @@ string = country86mobile15882133579password654321zztime1516007278
 
 sign=MD5(string+secretKey)
 ```
-## 3.post请求参数采用表单格式提交数据
+## 4.post请求参数采用表单格式提交数据
 ```
 content-type:application/x-www-form-urlencoded
 ```
 
-## 4.错误码
+## 5.错误码
 |错误码|说明|
 |:---|:---|
 |0|成功|
@@ -71,9 +75,6 @@ content-type:application/x-www-form-urlencoded
 |100005|参数签名错误|
 |100007|非法IP|
 |110002|未知币种代号|
-
-## 5.地址
-https://openapi.bition.pro/exchange-open-api
 
 ## 6.API
 ### 1) /open/api/all_order —— 获取全部委托(get)。包括已成交和已取消
