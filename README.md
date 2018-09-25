@@ -78,7 +78,7 @@ content-type:application/x-www-form-urlencoded
 
 ## 市场标记(symbol)
 
-|虚拟币|XXX/BTC|XXX/USDT|XXX/ETH|
+|虚拟币|BTC交易区|USDT交易区|ETH交易区|
 |:---|:---|:---|:---|
 |btc|-|btcusdt|-|
 |eth|ethbtc|ethusdt|-|
