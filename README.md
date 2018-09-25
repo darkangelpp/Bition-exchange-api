@@ -44,7 +44,7 @@
 }
 ```
  
-拼接完成后：
+按照参数首字母排序拼接后：
 ```
 string = country86mobile15882133579password654321zztime1516007278
 
@@ -86,7 +86,7 @@ content-type:application/x-www-form-urlencoded
 |ht|htbtc|htusdt|hteth|
 
 ## 6.API
-### 1) /open/api/all_order —— 获取全部委托(get)。包括已成交和已取消
+### 1) /open/api/all_order —— 获取全部委托，包括已成交和已取消(get)
 |参数|填写类型|说明|
 |:---|:---|:---|
 |symbol|必填|市场标记，例如：ethbtc。见文档最后表一|
