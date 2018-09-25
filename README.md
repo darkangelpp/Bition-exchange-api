@@ -76,6 +76,15 @@ content-type:application/x-www-form-urlencoded
 |100007|非法IP|
 |110002|未知币种代号|
 
+## 市场标记(symbol)
+
+|虚拟币|XXX/BTC|XXX/USDT|XXX/ETH|
+|:---|:---|:---|:---|
+|btc|-|btcusdt|-|
+|eth|ethbtc|ethusdt|-|
+|mvp|mvpbtc|mvpusdt|mvpeth|
+|ht|htbtc|htusdt|hteth|
+
 ## 6.API
 ### 1) /open/api/all_order —— 获取全部委托(get)。包括已成交和已取消
 |参数|填写类型|说明|
@@ -670,11 +679,4 @@ content-type:application/x-www-form-urlencoded
 }
 ```
 
-### 市场标记(symbol)
 
-|虚拟币|XXX/BTC|XXX/USDT|XXX/ETH|
-|:---|:---|:---|:---|
-|btc|-|btcusdt|-|
-|eth|ethbtc|ethusdt|-|
-|mvp|mvpbtc|mvpusdt|mvpeth|
-|ht|htbtc|htusdt|hteth|
