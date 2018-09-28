@@ -1,5 +1,5 @@
 # Bition-exchange-api
-## 1.目录
+## 1.目录 
 * /open/api/all_order —— 获取全部委托
 
 * /open/api/all_trade —— 获取全部成交记录
